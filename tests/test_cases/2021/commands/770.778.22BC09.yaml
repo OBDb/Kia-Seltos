@@ -3,6 +3,12 @@ can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
 - response: |-
+    778100B62BC09040033
+    77821FF20000000AAAA
+  expected_values:
+    KIA_HL_HIGH: 0
+    KIA_HL_LOW: 0
+- response: |-
     778100B62BC0935A033
     77821FF00000000AAAA
   expected_values:
