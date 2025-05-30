@@ -1,0 +1,8 @@
+command_id: 770.778.22BC09
+test_cases:
+- response: |-
+    778100B62BC09040033
+    77821FF20000000AAAA
+  expected_values:
+    KIA_HL_HIGH: 0
+    KIA_HL_LOW: 0
