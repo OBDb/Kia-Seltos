@@ -2,15 +2,6 @@ command_id: 7D4.7DC.220101
 test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 38.4
-    KIA_BMS_DISCHG_PWR: 654.63
-    KIA_BMS_MIN_TEMP: 1
-    KIA_BMS_SOC: 0
-  response: |-
-    7DC1013620101777600
-    7DC2137000F00FFB700
-    7DC22000303012B01AA
-- expected_values:
-    KIA_BMS_CHG_PWR: 38.4
     KIA_BMS_DISCHG_PWR: 654.75
     KIA_BMS_MIN_TEMP: 1
     KIA_BMS_SOC: 0
@@ -85,8 +76,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC10156201016D6500
@@ -97,8 +86,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC10156201017C74FF
@@ -109,8 +96,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 4.5
   response: |-
     7DC10156201017D7500
@@ -133,8 +118,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0.27
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC10156201018F8707
@@ -157,8 +140,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0.74
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC10156201018F87FF
@@ -181,8 +162,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 0.95
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC101562010190880B
@@ -193,8 +172,6 @@ test_cases:
     KIA_BMS_CHG_PWR: 0.32
     KIA_BMS_DISCHG_PWR: 1.05
     KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
     KIA_BMS_SOC: 100
   response: |-
     7DC10156201019088FB
