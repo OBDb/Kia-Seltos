@@ -1,0 +1,26 @@
+command_id: 770.778.22BC09
+test_cases:
+- expected_values:
+    KIA_HL_HIGH: 0
+    KIA_HL_LOW: 0
+  response: |-
+    778100B62BC0935A033
+    77821FF00000000AAAA
+- expected_values:
+    KIA_HL_HIGH: 1
+    KIA_HL_LOW: 0.25
+  response: |-
+    778100B62BC0935A033
+    77821FF0000C003AAAA
+- expected_values:
+    KIA_HL_HIGH: 0
+    KIA_HL_LOW: 0
+  response: |-
+    778100B62BC0935A033
+    77821FF00040000AAAA
+- expected_values:
+    KIA_HL_HIGH: 1
+    KIA_HL_LOW: 1
+  response: |-
+    778100B62BC0935A033
+    77821FF0004C0C0AAAA
