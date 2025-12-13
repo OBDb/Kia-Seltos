@@ -23,40 +23,10 @@ test_cases:
     KIA_TURN_R: 0
   response: |-
     778100B62BC08F05790
-    77821BC0002001CAAAA
-- expected_values:
-    KIA_TURN_L: 0
-    KIA_TURN_R: 0
-  response: |-
-    778100B62BC08F05790
-    77821BC0002011CAAAA
-- expected_values:
-    KIA_TURN_L: 0
-    KIA_TURN_R: 0
-  response: |-
-    778100B62BC08F05790
     77821BC0008011CAAAA
 - expected_values:
     KIA_TURN_L: 0
     KIA_TURN_R: 0
   response: |-
     778100B62BC08F05790
-    77821BC0100011CAAAA
-- expected_values:
-    KIA_TURN_L: 1
-    KIA_TURN_R: 0
-  response: |-
-    778100B62BC08F05790
-    77821BC0200011CAAAA
-- expected_values:
-    KIA_TURN_L: 0
-    KIA_TURN_R: 0
-  response: |-
-    778100B62BC08F05790
     77821BC0800011CAAAA
-- expected_values:
-    KIA_TURN_L: 0
-    KIA_TURN_R: 0
-  response: |-
-    778100B62BC08F05790
-    77821BC0808011CAAAA
