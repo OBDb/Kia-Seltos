@@ -43,11 +43,11 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
-    KIA_LOW_BEAMS: 4
+    KIA_LOW_BEAMS: 0
     KIA_TRUNK: 0
   response: |-
     778100B62BC03FFEE20
-    778216300620402AAAA
+    778216300620002AAAA
 - expected_values:
     KIA_BELT_DRIV: 1
     KIA_BELT_DRIVER: 1
