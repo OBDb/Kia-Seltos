@@ -8,6 +8,15 @@ test_cases:
     KIA_LOCK_FL: 0
     KIA_LOCK_FR: 0
     KIA_REVERSE_GEAR: 0
+  response: "778 10 0B 62 BC 04 F5 37 70 \n778 21 20 01 00 00 00 AA AA "
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
   response: |-
     778100B62BC04F53770
     778212000800000AAAA

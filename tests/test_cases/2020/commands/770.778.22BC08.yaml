@@ -3,6 +3,10 @@ test_cases:
 - expected_values:
     KIA_TURN_L: 0
     KIA_TURN_R: 0
+  response: "778 10 0B 62 BC 08 00 57 90 \n778 21 BC 00 00 01 1C AA AA "
+- expected_values:
+    KIA_TURN_L: 0
+    KIA_TURN_R: 0
   response: |-
     778100B62BC08005790
     77821BC0000001CAAAA

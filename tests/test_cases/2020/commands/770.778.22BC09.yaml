@@ -2,6 +2,10 @@ command_id: 770.778.22BC09
 test_cases:
 - expected_values:
     KIA_HL_HIGH: 0
+    KIA_HL_LOW: 1
+  response: "778 10 0B 62 BC 09 35 A0 33 \n778 21 FF 20 04 00 30 AA AA "
+- expected_values:
+    KIA_HL_HIGH: 0
     KIA_HL_LOW: 0
   response: |-
     778100B62BC0935A033
