@@ -2,6 +2,14 @@ command_id: 7E0.7E8.22E004
 test_cases:
 - expected_values:
     KIA_22E004: 100
+  response: "7E8 10 19 62 E0 04 FF FF 03 \n7E8 21 00 FD D0 C8 77 F4 76 \n7E8 22 BB
+    80 F0 E2 30 D8 F7 \n7E8 23 00 00 33 10 10 AA AA "
+- expected_values:
+    KIA_22E004: 100
+  response: "7E8 10 19 62 E0 04 FF FF 03 \n7E8 21 00 FD DD C8 77 F0 76 \n7E8 22 BA
+    80 F0 E0 30 D8 F7 \n7E8 23 00 00 33 10 10 AA AA "
+- expected_values:
+    KIA_22E004: 100
   response: |-
     7E8101962E004FFFF03
     7E82100F0D0C073F172
