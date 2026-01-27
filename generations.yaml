@@ -1,10 +1,13 @@
-generations:
-  - name: "First Generation"
-    start_year: 2019
-    end_year: 2023
-    description: "The first generation Kia Seltos debuted as a compact crossover SUV positioned between the Soul and Sportage in Kia's lineup. It featured distinctive styling with a tiger-nose grille, LED lighting, and a two-tone roof option. Power came from either a 2.0L naturally aspirated engine with 146 HP or a 1.6L turbocharged option producing 175 HP, paired with CVT or 7-speed dual-clutch transmissions. The Seltos offered a relatively spacious interior for its segment, with a 10.25-inch touchscreen infotainment system, available premium Bose audio, and Kia's comprehensive suite of driver assistance features. With its competitive pricing, attractive styling, and tech-forward approach, the first-generation Seltos quickly established itself in the crowded subcompact SUV market."
+references:
+  - "https://en.wikipedia.org/wiki/Kia_Seltos"
 
-  - name: "Second Generation"
-    start_year: 2024
+generations:
+  - name: "First Generation (SP2)"
+    start_year: 2019
+    end_year: 2025
+    description: "The first generation Kia Seltos debuted as a subcompact crossover SUV positioned between the smaller Stonic/Soul and the larger Sportage in Kia's global lineup. Launched in July 2019, the Seltos was designated as a global product with three variations: SP2 (South Korean-built, aimed at developed markets), SP2i (Indian-built for emerging markets), and SP2c/China KX3. The SP2 model shared its platform with the Hyundai Kona and Kia Soul, while SP2i/SP2c used the Hyundai-Kia K2 platform. Engine options included 1.6L turbocharged GDI, 2.0L naturally aspirated MPI, and diesel 1.5L/1.6L CRDi variants, paired with CVT, 7-speed DCT, or 6-speed automatic transmissions. A significant facelift was introduced in July 2022 (South Korea) and July 2023 (India), featuring updated front styling, revised dashboard with dual 10.25-inch displays, and the new Kia badge. The Seltos established itself as a strong competitor in the subcompact SUV segment, becoming Kia's second best-selling model globally."
+
+  - name: "Second Generation (SP3)"
+    start_year: 2025
     end_year: null
-    description: "The second generation Kia Seltos received a significant refresh with bolder exterior styling, including a revised front fascia with a wider grille and updated LED lighting with a distinctive light bar. The interior was upgraded with a dual 10.25-inch panoramic display combining the digital instrument cluster and infotainment touchscreen. New tech features included available power liftgate, ventilated front seats, and expanded driver assistance systems. The powertrain options carried over from the previous generation but with refinements to improve efficiency and drivability. All-wheel drive remained optional across most trims. The redesigned Seltos maintained its positioning as a tech-forward compact crossover with distinctive styling and practical interior space, building on the success of the first generation while offering modern enhancements to compete with rivals in the increasingly competitive segment."
+    description: "The second generation Kia Seltos (codename SP3) represents a complete redesign built on the new Hyundai-Kia K3 platform, shared with the third-generation Hyundai Kona. Unveiled simultaneously in Korea, India, Europe, and America on December 10, 2025, the new Seltos features more modern styling with updated tiger-nose design language and a comprehensive interior upgrade. The vehicle maintains its subcompact crossover positioning while offering improved technology, efficiency, and driving dynamics compared to its predecessor. All-wheel drive remains available on higher trims."
