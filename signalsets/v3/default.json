@@ -1,4 +1,166 @@
 { "commands": [
-
+{ "hdr": "7A0", "rax": "7A8", "fcm1": true, "cmd": {"22": "C00B"}, "freq": 15, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_TP_FL",      "path": "Tires", "fmt": {"bix": 32,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front left tire pressure",          "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "SELTOS_TT_FL",      "path": "Tires", "fmt": {"bix": 40,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front left tire temperature",       "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "SELTOS_FL_INVALID", "path": "Tires", "fmt": {"bix": 70,  "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Front left tire reading invalid?"},
+    {"id": "SELTOS_TP_FR",      "path": "Tires", "fmt": {"bix": 72,  "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Front right tire pressure",         "suggestedMetric": "frontRightTirePressure"},
+    {"id": "SELTOS_TT_FR",      "path": "Tires", "fmt": {"bix": 80,  "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Front right tire temperature",      "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "SELTOS_FR_INVALID", "path": "Tires", "fmt": {"bix": 110, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Front right tire reading invalid?"},
+    {"id": "SELTOS_TP_RL",      "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear left tire pressure",           "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "SELTOS_TT_RL",      "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear left tire temperature",        "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "SELTOS_RL_INVALID", "path": "Tires", "fmt": {"bix": 150, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Rear left tire reading invalid?"},
+    {"id": "SELTOS_TP_RR",      "path": "Tires", "fmt": {"bix": 152, "len": 8, "max": 51,              "div": 5,             "nullmin": 0,   "unit": "psi"     }, "name": "Rear right tire pressure",          "suggestedMetric": "rearRightTirePressure"},
+    {"id": "SELTOS_TT_RR",      "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 205, "min": -50,           "add": -50, "nullmin": -50, "unit": "celsius" }, "name": "Rear right tire temperature",       "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "SELTOS_RR_INVALID", "path": "Tires", "fmt": {"bix": 190, "len": 1, "max": 1,                                                     "unit": "noyes"   }, "name": "Rear right tire reading invalid?"},
+    {"id": "SELTOS_TB_FL", "path": "Tires", "name": "Tire battery front left", "fmt": {"bix": 48, "len": 8, "map": {
+          "0": { "description": ">3 V",        "value": "3V+" },
+          "1": { "description": "2.7 - 3 V",   "value": "27_3V" },
+          "2": { "description": "2.4 - 2.7 V", "value": "2_4_2_7V" },
+          "3": { "description": "< 2.4",       "value": "2_4-" }
+        }}
+    },
+    {"id": "SELTOS_TB_FR", "path": "Tires", "name": "Tire battery front right", "fmt": {"bix": 88, "len": 8, "map": {
+          "0": { "description": ">3 V",        "value": "3V+" },
+          "1": { "description": "2.7 - 3 V",   "value": "27_3V" },
+          "2": { "description": "2.4 - 2.7 V", "value": "2_4_2_7V" },
+          "3": { "description": "< 2.4",       "value": "2_4-" }
+        }}
+    },
+    {"id": "SELTOS_TB_RR", "path": "Tires", "name": "Tire battery rear right", "fmt": {"bix": 128, "len": 8, "map": {
+          "0": { "description": ">3 V",        "value": "3V+" },
+          "1": { "description": "2.7 - 3 V",   "value": "27_3V" },
+          "2": { "description": "2.4 - 2.7 V", "value": "2_4_2_7V" },
+          "3": { "description": "< 2.4",       "value": "2_4-" }
+        }}
+    },
+    {"id": "SELTOS_TB_RL", "path": "Tires", "name": "Tire battery rear left", "fmt": {"bix": 168, "len": 8, "map": {
+          "0": { "description": ">3 V",        "value": "3V+" },
+          "1": { "description": "2.7 - 3 V",   "value": "27_3V" },
+          "2": { "description": "2.4 - 2.7 V", "value": "2_4_2_7V" },
+          "3": { "description": "< 2.4",       "value": "2_4-" }
+        }}
+    }
+  ]},
+{ "hdr": "7B3", "rax": "7BB", "fcm1": true, "cmd": {"22": "0100"}, "freq": 0.25, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_TEMP_INT", "path": "Climate",  "fmt": {"bix": 40,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Interior temperature"},
+    {"id": "SELTOS_TEMP_EXT", "path": "Climate",  "fmt": {"bix": 48,  "len": 8, "max": 80,  "min": -40, "div": 2, "add": -40, "unit": "celsius"           }, "name": "Exterior temperature"},
+    {"id": "SELTOS_VSS",      "path": "Movement", "fmt": {"bix": 232, "len": 8, "max": 255,                                   "unit": "kilometersPerHour" }, "name": "Vehicle speed",        "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_FLI_VOL", "path": "Fuel",    "fmt": {"bix": 32, "len": 8,  "max": 255,                   "unit": "liters"     }, "name": "Fuel level",          "suggestedMetric": "fuelTankLevel"},
+    {"id": "SELTOS_VPWR",    "path": "Battery", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "unit": "volts"      }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "SELTOS_ODO_KM",  "path": "Trips",   "fmt": {"bix": 48, "len": 24, "max": 16777215,              "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
+    {"id": "SELTOS_ODO_MI",  "path": "Trips",   "fmt": {"bix": 72, "len": 24, "max": 16777215,              "unit": "miles"      }, "name": "Odometer",            "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"22": "C101"}, "freq": 0.25,
+  "signals": [
+    {"id": "SELTOS_FL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "SELTOS_FR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "SELTOS_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "SELTOS_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"22": "0101"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_BMS_SOC",        "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                "div": 2,                 "unit": "percent"   }, "name": "State of charge",           "suggestedMetric": "stateOfCharge"},
+    {"id": "SELTOS_BMS_CHG_PWR",    "path": "Battery", "fmt": {"bix": 40,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available charge power"},
+    {"id": "SELTOS_BMS_DISCHG_PWR", "path": "Battery", "fmt": {"bix": 56,  "len": 16, "max": 655.35,             "div": 100,               "unit": "kilowatts" }, "name": "Available discharge power"},
+    {"id": "SELTOS_BMS_MIN_TEMP",   "path": "Battery", "fmt": {"bix": 120, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery min temp"},
+    {"id": "SELTOS_BMS_MOD1_TEMP",  "path": "Battery", "fmt": {"bix": 128, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 1 temp"},
+    {"id": "SELTOS_BMS_MOD2_TEMP",  "path": "Battery", "fmt": {"bix": 136, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 2 temp"},
+    {"id": "SELTOS_BMS_MOD3_TEMP",  "path": "Battery", "fmt": {"bix": 144, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 3 temp"},
+    {"id": "SELTOS_BMS_MOD4_TEMP",  "path": "Battery", "fmt": {"bix": 152, "len": 8,  "max": 80,     "min": -40,             "sign": true, "unit": "celsius"   }, "name": "Battery mod 4 temp"}
+  ]},
+{ "hdr": "7E0", "dbg": true, "cmd": {"22": "E005"}, "freq": 1,
+  "signals": [
+    {"id": "SELTOS_GDI_IT_A1", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 1"},
+    {"id": "SELTOS_GDI_IT_A2", "path": "Engine", "fmt": {"bix": 240, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 2"},
+    {"id": "SELTOS_GDI_IT_A3", "path": "Engine", "fmt": {"bix": 256, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 3"},
+    {"id": "SELTOS_GDI_IT_A4", "path": "Engine", "fmt": {"bix": 272, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank a, 4"},
+    {"id": "SELTOS_GDI_IT_B1", "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 1"},
+    {"id": "SELTOS_GDI_IT_B2", "path": "Engine", "fmt": {"bix": 368, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 2"},
+    {"id": "SELTOS_GDI_IT_B3", "path": "Engine", "fmt": {"bix": 384, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 3"},
+    {"id": "SELTOS_GDI_IT_B4", "path": "Engine", "fmt": {"bix": 400, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "milliseconds" }, "name": "Gasoline direct injection time bank b, 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E001"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_BATTERY_V",                "path": "Battery", "fmt": {"bix": 32,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                "unit": "volts"   }, "name": "Battery voltage"},
+    {"id": "SELTOS_BATTERY_V_AFTER_IGNITION", "path": "Battery", "fmt": {"bix": 40,  "len": 8, "max": 17.37,                  "mul": 17.37, "div": 255,                "unit": "volts"   }, "name": "Battery voltage after ignition"},
+    {"id": "SELTOS_BATTERY_SOC",              "path": "Battery", "fmt": {"bix": 48,  "len": 8, "max": 100,                    "mul": 100,   "div": 255,                "unit": "percent" }, "name": "Battery state of charge",        "suggestedMetric": "stateOfCharge"},
+    {"id": "SELTOS_EIT",                      "path": "Engine",  "fmt": {"bix": 264, "len": 8, "max": 143,        "min": -48, "mul": 3,     "div": 4,      "add": -48, "unit": "celsius" }, "name": "Intake air temperature"},
+    {"id": "SELTOS_EOT",                      "path": "Engine",  "fmt": {"bix": 272, "len": 8, "max": 143.254781,                           "div": 1.3333, "add": -48, "unit": "celsius" }, "name": "Engine oil temperature",         "suggestedMetric": "engineOilTemperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E002"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_INJ_DUR_1", "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 1"},
+    {"id": "SELTOS_INJ_DUR_2", "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 2"},
+    {"id": "SELTOS_INJ_DUR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 3"},
+    {"id": "SELTOS_INJ_DUR_4", "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 53.686409, "div": 1220.7, "unit": "seconds" }, "name": "Injection duration cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E004"}, "freq": 5, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_22E004",  "path": "Engine.Unknown", "fmt": {            "len": 8, "max": 100, "unit": "scalar"  }, "name": "Unknown"},
+    {"id": "SELTOS_AUX_SOC", "path": "Battery",        "fmt": {"bix": 320, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of charge", "suggestedMetric": "stateOfCharge"},
+    {"id": "SELTOS_AUX_SOH", "path": "Battery",        "fmt": {"bix": 328, "len": 8, "max": 100, "unit": "percent" }, "name": "Aux battery state of health", "suggestedMetric": "stateOfHealth"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E00A"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_KNOCK_RETARD_1", "path": "Engine", "fmt": {"bix": 96,  "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 1"},
+    {"id": "SELTOS_KNOCK_RETARD_2", "path": "Engine", "fmt": {"bix": 104, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 2"},
+    {"id": "SELTOS_KNOCK_RETARD_3", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 3"},
+    {"id": "SELTOS_KNOCK_RETARD_4", "path": "Engine", "fmt": {"bix": 120, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 4"},
+    {"id": "SELTOS_KNOCK_LEARN_1",  "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 1"},
+    {"id": "SELTOS_KNOCK_LEARN_2",  "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 2"},
+    {"id": "SELTOS_KNOCK_LEARN_3",  "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 3"},
+    {"id": "SELTOS_KNOCK_LEARN_4",  "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 25.4, "min": -25.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Knock learn cylinder 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "E00D"}, "freq": 1,
+  "signals": [
+    {"id": "SELTOS_MISFIRES_C1_CUR",                                "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 1"},
+    {"id": "SELTOS_MISFIRES_C2_CUR",                                "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 2"},
+    {"id": "SELTOS_MISFIRES_C3_CUR",                                "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 3"},
+    {"id": "SELTOS_MISFIRES_C4_CUR",                                "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires, current, cylinder 4"},
+    {"id": "SELTOS_EMISSION_RELEVANT_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 176, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 1"},
+    {"id": "SELTOS_EMISSION_RELEVANT_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 192, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 2"},
+    {"id": "SELTOS_EMISSION_RELEVANT_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 208, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 3"},
+    {"id": "SELTOS_EMISSION_RELEVANT_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total, cylinder 4"},
+    {"id": "SELTOS_CATALYST_DAMAGING_MISFIRES_TOTAL_C1",            "path": "Engine", "fmt": {"bix": 304, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 1"},
+    {"id": "SELTOS_CATALYST_DAMAGING_MISFIRES_TOTAL_C2",            "path": "Engine", "fmt": {"bix": 320, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 2"},
+    {"id": "SELTOS_CATALYST_DAMAGING_MISFIRES_TOTAL_C3",            "path": "Engine", "fmt": {"bix": 336, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 3"},
+    {"id": "SELTOS_CATALYST_DAMAGING_MISFIRES_TOTAL_C4",            "path": "Engine", "fmt": {"bix": 352, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total, cylinder 4"},
+    {"id": "SELTOS_EMISSION_RELEVANT_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission relevant misfires total all cylinders"},
+    {"id": "SELTOS_CATALYST_DAMAGING_MISFIRES_TOTAL_ALL_CYLINDERS", "path": "Engine", "fmt": {"bix": 448, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Catalyst damaging misfires total all cylinders"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
+  "signals": [
+    {"id": "SELTOS_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81, "min": -10,             "div": 831.55690902, "add": -12, "unit": "psi"     }, "name": "Turbo boost pressure"},
+    {"id": "SELTOS_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                "mul": 10,  "div": 65535,                    "unit": "volts"   }, "name": "Waste gate voltage"},
+    {"id": "SELTOS_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,               "mul": 200, "div": 65535,                    "unit": "percent" }, "name": "Waste gate duty"},
+    {"id": "SELTOS_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 400,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate position"},
+    {"id": "SELTOS_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,               "mul": 400, "div": 65535,                    "unit": "percent" }, "name": "Waste gate setpoint"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A0"}, "freq": 1, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2023, 2024], "from": 2026 },
+  "signals": [
+    {"id": "SELTOS_RPM",                                 "path": "Movement",     "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "SELTOS_VSS_7E1",                             "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
+    {"id": "SELTOS_RELATIVE_ACCELERATOR_PEDAL_POSITION", "path": "Movement",     "fmt": {"bix": 64,  "len": 8,  "max": 100,                   "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Relative accelerator pedal position"},
+    {"id": "SELTOS_TURBINE_SPD",                         "path": "Movement",     "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Turbine speed"},
+    {"id": "SELTOS_OUTPUT_RPM",                          "path": "Movement",     "fmt": {"bix": 88,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Output speed"},
+    {"id": "SELTOS_ATF_T",                               "path": "Engine",       "fmt": {"bix": 104, "len": 8,  "max": 215,      "min": -40,                          "add": -40,  "unit": "celsius"           }, "name": "Automatic transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "SELTOS_TORQUE_CONVERTER_SLIP",               "path": "Engine",       "fmt": {"bix": 128, "len": 16, "max": 15871.75, "min": -512,             "div": 4,   "add": -512, "unit": "rpm"               }, "name": "Torque converter slip"},
+    {"id": "SELTOS_GEAR",                                "path": "Transmission", "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Gear"},
+    {"id": "SELTOS_CURRENT_GEAR",                        "path": "Transmission", "fmt": {"bix": 168, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Current gear"},
+    {"id": "SELTOS_COMMANDED_GEAR",                      "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
+    {"id": "SELTOS_BRAKE_PEDAL",                         "path": "Engine",       "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "01A4"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2022, 2023], "from": 2025 },
+  "signals": [
+    {"id": "SELTOS_GEAR_CUR",   "path": "Transmission", "fmt": {"bix": 188, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Current gear"},
+    {"id": "SELTOS_GEAR_NXT",   "path": "Transmission", "fmt": {"bix": 196, "len": 4,  "max": 15,                                    "unit": "scalar"  }, "name": "Next gear"},
+    {"id": "SELTOS_CLUTCH_1_T", "path": "Transmission", "fmt": {"bix": 232, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #1 temperature", "description": "Part of the dual clutch transition"},
+    {"id": "SELTOS_CLUTCH_2_T", "path": "Transmission", "fmt": {"bix": 248, "len": 16, "max": 300, "min": -40, "mul": 2, "add": -40, "unit": "celsius" }, "name": "Clutch #2 temperature", "description": "Part of the dual clutch transition"}
+  ]}
 ]
 }
