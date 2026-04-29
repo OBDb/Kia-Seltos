@@ -38,6 +38,12 @@ test_cases:
     77821FF2000C000AAAA
 - expected_values:
     KIA_HL_HIGH: 1
+    KIA_HL_LOW: 0.25
+  response: |-
+    778100B62BC09040033
+    77821FF2000C003AAAA
+- expected_values:
+    KIA_HL_HIGH: 1
     KIA_HL_LOW: 1
   response: |-
     778100B62BC09040033
