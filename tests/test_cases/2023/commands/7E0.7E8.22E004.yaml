@@ -2,8 +2,6 @@ command_id: 7E0.7E8.22E004
 test_cases:
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100001700005F10
@@ -25,8 +23,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100001700008F07
@@ -48,8 +44,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100001900005014
@@ -71,8 +65,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210001140000B212
@@ -94,8 +86,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210001140000DB0D
@@ -117,8 +107,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100021600001208
@@ -140,8 +128,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210005190000000C
@@ -163,8 +149,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100051900002614
@@ -186,8 +170,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100071F00001F0F
@@ -209,8 +191,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100081A0000CF12
@@ -232,8 +212,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210009150000100A
@@ -255,8 +233,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E821000C180000A312
@@ -278,8 +254,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E821000E170000980C
@@ -301,8 +275,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E821000E170000F90F
@@ -324,8 +296,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100111A00005913
@@ -347,8 +317,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210013150000D208
@@ -370,8 +338,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100161A0000FB0C
@@ -393,8 +359,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100231400001E0F
@@ -416,8 +380,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E821002B170000CF07
@@ -439,8 +401,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210037160000100F
@@ -462,8 +422,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210041180000F907
@@ -485,8 +443,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210046180000640F
@@ -508,8 +464,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210055130000990B
@@ -531,8 +485,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E821005F2000009D13
@@ -554,8 +506,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210062180000570B
@@ -577,8 +527,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210065170000570B
@@ -600,8 +548,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100661600000309
@@ -623,8 +569,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210075180000390B
@@ -646,8 +590,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210086170000990C
@@ -669,8 +611,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E8210099150000DF08
@@ -692,8 +632,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100AC150000AC07
@@ -715,8 +653,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100AF1A0000721B
@@ -738,8 +674,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100D01800005010
@@ -761,8 +695,6 @@ test_cases:
     7E821000000000000AA
 - expected_values:
     SELTOS_22E004: 100
-    SELTOS_AUX_SOC: 0
-    SELTOS_AUX_SOH: 0
   response: |-
     7E8107C62E004B1FF01
     7E82100F01200002C0B
