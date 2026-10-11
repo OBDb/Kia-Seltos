@@ -1,0 +1,28 @@
+command_id: 770.778.22BC05
+test_cases:
+- expected_values:
+    SELTOS_HAZARD_SW: 2
+  response: |-
+    778100B62BC052F1324
+    778210002000000AAAA
+- expected_values:
+    SELTOS_HAZARD_SW: 2
+    SELTOS_HL_SW: 1
+  response: |-
+    778100B62BC052F1324
+    778210002000400AAAA
+- expected_values:
+    SELTOS_HAZARD_SW: 2
+  response: |-
+    778100B62BC052F1324
+    778210002080000AAAA
+- expected_values:
+    SELTOS_HAZARD_SW: 2
+  response: |-
+    778100B62BC052F1324
+    778210002C00000AAAA
+- expected_values:
+    SELTOS_HAZARD_SW: 242
+  response: |-
+    778100B62BC052F1324
+    7782100F2400000AAAA

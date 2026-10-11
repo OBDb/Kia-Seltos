@@ -1,0 +1,32 @@
+command_id: 770.778.22BC08
+test_cases:
+- expected_values:
+    SELTOS_TURN_L: 0
+    SELTOS_TURN_R: 0
+  response: |-
+    778100B62BC08F05790
+    77821BC00000018AAAA
+- expected_values:
+    SELTOS_TURN_L: 0
+    SELTOS_TURN_R: 0
+  response: |-
+    778100B62BC08F05790
+    77821BC0000001CAAAA
+- expected_values:
+    SELTOS_TURN_L: 0
+    SELTOS_TURN_R: 0
+  response: |-
+    778100B62BC08F05790
+    77821BC0000011CAAAA
+- expected_values:
+    SELTOS_TURN_L: 0
+    SELTOS_TURN_R: 0
+  response: |-
+    778100B62BC08F05790
+    77821BC0008011CAAAA
+- expected_values:
+    SELTOS_TURN_L: 0
+    SELTOS_TURN_R: 0
+  response: |-
+    778100B62BC08F05790
+    77821BC0800011CAAAA
