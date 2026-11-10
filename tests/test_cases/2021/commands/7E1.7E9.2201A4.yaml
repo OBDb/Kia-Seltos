@@ -3,7 +3,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 82
     SELTOS_CLUTCH_2_T: 62
-    SELTOS_GEAR_CUR: 1
+    SELTOS_GEAR_CUR: '1'
     SELTOS_GEAR_NXT: 1
   response: |-
     7E910316201A4FFFFFF
@@ -17,7 +17,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 82
     SELTOS_CLUTCH_2_T: 62
-    SELTOS_GEAR_CUR: 1
+    SELTOS_GEAR_CUR: '1'
     SELTOS_GEAR_NXT: 1
   response: |-
     7E910316201A4FFFFFF
@@ -31,7 +31,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 146
     SELTOS_CLUTCH_2_T: 116
-    SELTOS_GEAR_CUR: 1
+    SELTOS_GEAR_CUR: '1'
     SELTOS_GEAR_NXT: 1
   response: |-
     7E910316201A4FFFFFF
@@ -45,7 +45,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 160
     SELTOS_CLUTCH_2_T: 142
-    SELTOS_GEAR_CUR: 1
+    SELTOS_GEAR_CUR: '1'
     SELTOS_GEAR_NXT: 1
   response: |-
     7E910316201A4FFFFFF
@@ -59,7 +59,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 210
     SELTOS_CLUTCH_2_T: 210
-    SELTOS_GEAR_CUR: 1
+    SELTOS_GEAR_CUR: '1'
     SELTOS_GEAR_NXT: 1
   response: |-
     7E910316201A4FFFFFF
@@ -73,7 +73,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 218
     SELTOS_CLUTCH_2_T: 210
-    SELTOS_GEAR_CUR: 4
+    SELTOS_GEAR_CUR: '4'
     SELTOS_GEAR_NXT: 4
   response: |-
     7E910316201A4FFFFFF
@@ -87,7 +87,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 84
     SELTOS_CLUTCH_2_T: 58
-    SELTOS_GEAR_CUR: 7
+    SELTOS_GEAR_CUR: '7'
     SELTOS_GEAR_NXT: 7
   response: |-
     7E910316201A4FFFFFF
@@ -101,7 +101,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 162
     SELTOS_CLUTCH_2_T: 134
-    SELTOS_GEAR_CUR: 6
+    SELTOS_GEAR_CUR: '6'
     SELTOS_GEAR_NXT: 6
   response: |-
     7E910316201A4FFFFFF
@@ -115,7 +115,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 84
     SELTOS_CLUTCH_2_T: 60
-    SELTOS_GEAR_CUR: 6
+    SELTOS_GEAR_CUR: '6'
     SELTOS_GEAR_NXT: 6
   response: |-
     7E910316201A4FFFFFF
@@ -129,7 +129,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 222
     SELTOS_CLUTCH_2_T: 226
-    SELTOS_GEAR_CUR: 2
+    SELTOS_GEAR_CUR: '2'
     SELTOS_GEAR_NXT: 2
   response: |-
     7E910316201A4FFFFFF
@@ -143,7 +143,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 214
     SELTOS_CLUTCH_2_T: 210
-    SELTOS_GEAR_CUR: 4
+    SELTOS_GEAR_CUR: '4'
     SELTOS_GEAR_NXT: 4
   response: |-
     7E910316201A4FFFFFF
@@ -157,7 +157,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 210
     SELTOS_CLUTCH_2_T: 212
-    SELTOS_GEAR_CUR: 3
+    SELTOS_GEAR_CUR: '3'
     SELTOS_GEAR_NXT: 3
   response: |-
     7E910316201A4FFFFFF
@@ -171,7 +171,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 224
     SELTOS_CLUTCH_2_T: 212
-    SELTOS_GEAR_CUR: 3
+    SELTOS_GEAR_CUR: '3'
     SELTOS_GEAR_NXT: 3
   response: |-
     7E910316201A4FFFFFF
@@ -185,7 +185,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 80
     SELTOS_CLUTCH_2_T: 56
-    SELTOS_GEAR_CUR: 7
+    SELTOS_GEAR_CUR: '7'
     SELTOS_GEAR_NXT: 7
   response: |-
     7E910316201A4FFFFFF
@@ -199,7 +199,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 82
     SELTOS_CLUTCH_2_T: 56
-    SELTOS_GEAR_CUR: 7
+    SELTOS_GEAR_CUR: '7'
     SELTOS_GEAR_NXT: 7
   response: |-
     7E910316201A4FFFFFF
@@ -213,7 +213,7 @@ test_cases:
 - expected_values:
     SELTOS_CLUTCH_1_T: 84
     SELTOS_CLUTCH_2_T: 56
-    SELTOS_GEAR_CUR: 7
+    SELTOS_GEAR_CUR: '7'
     SELTOS_GEAR_NXT: 7
   response: |-
     7E910316201A4FFFFFF
