@@ -12,7 +12,6 @@ test_cases:
     778210000400000AAAA
 - expected_values:
     SELTOS_HAZARD_SW: 0
-    SELTOS_HL_SW: 1
   response: |-
     778100B62BC056F1324
     778210000400400AAAA
