@@ -46,7 +46,7 @@
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC05"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2026 },
   "signals": [
     {"id": "SELTOS_HAZARD_SW", "path": "Lights", "fmt": {"bix": 32, "len": 8, "max": 255,                             "unit": "scalar" }, "name": "Hazard switch"},
-    {"id": "SELTOS_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 1,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
+    {"id": "SELTOS_HL_SW",     "path": "Lights", "fmt": {"bix": 48, "len": 8, "max": 2,   "nullmin": 0, "nullmax": 2, "unit": "noyes"  }, "name": "Headlight switch"}
   ]},
 { "hdr": "770", "rax": "778", "cmd": {"22": "BC06"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021, 2022, 2024], "from": 2026 },
   "signals": [
@@ -176,10 +176,10 @@
   ]},
 { "hdr": "7C6", "rax": "7CE", "fcm1": true, "cmd": {"22": "B002"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2026 },
   "signals": [
-    {"id": "SELTOS_FLI_VOL", "path": "Fuel",    "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,    "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",          "suggestedMetric": "fuelTankLevel"},
-    {"id": "SELTOS_VPWR",    "path": "Battery", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8,                   "unit": "volts"      }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "SELTOS_ODO_KM",  "path": "Trips",   "fmt": {"bix": 48, "len": 24, "max": 16777215,                                "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
-    {"id": "SELTOS_ODO_MI",  "path": "Trips",   "fmt": {"bix": 72, "len": 24, "max": 16777215,                                "unit": "miles"      }, "name": "Odometer",            "suggestedMetric": "odometer"}
+    {"id": "SELTOS_FLI_VOL", "path": "Fuel",    "fmt": {"bix": 32, "len": 8,  "max": 127.5,    "div": 2,                  "nullmax": 127.5, "unit": "liters"     }, "name": "Fuel level",          "suggestedMetric": "fuelTankLevel"},
+    {"id": "SELTOS_VPWR",    "path": "Battery", "fmt": {"bix": 40, "len": 8,  "max": 18,       "div": 12.8, "nullmin": 0,                   "unit": "volts"      }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "SELTOS_ODO_KM",  "path": "Trips",   "fmt": {"bix": 48, "len": 24, "max": 16777215,                                              "unit": "kilometers" }, "name": "Odometer",            "suggestedMetric": "odometer"},
+    {"id": "SELTOS_ODO_MI",  "path": "Trips",   "fmt": {"bix": 72, "len": 24, "max": 16777215,                                              "unit": "miles"      }, "name": "Odometer",            "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
   "signals": [
@@ -572,11 +572,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E021"}, "freq": 0.1, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
   "signals": [
-    {"id": "SELTOS_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "max": 66.81,  "min": -10,              "div": 831.55690902, "add": -12,                                "unit": "psi"     }, "name": "Turbo boost pressure", "suggestedMetric": "boostPressure"},
-    {"id": "SELTOS_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                  "mul": 10,  "div": 65535,                                                   "unit": "volts"   }, "name": "Waste gate voltage"},
-    {"id": "SELTOS_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,                 "mul": 200, "div": 65535,                                                   "unit": "percent" }, "name": "Waste gate duty"},
-    {"id": "SELTOS_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate position"},
-    {"id": "SELTOS_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,    "min": -200, "mul": 400, "div": 65535,                    "sign": true, "nullmin": -200, "unit": "percent" }, "name": "Waste gate setpoint"}
+    {"id": "SELTOS_TURBO_BOOST", "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true,  "max": 66.81, "min": -10,               "div": 831.55690902, "add": -12,                                      "unit": "psi" },                             "name": "Turbo boost pressure", "suggestedMetric": "boostPressure"},
+    {"id": "SELTOS_WG_VOLTAGE",  "path": "Engine", "fmt": {"bix": 392, "len": 16, "max": 10,                   "mul": 10,  "div": 65535,                                                     "unit": "volts"   },            "name": "Waste gate voltage"},
+    {"id": "SELTOS_WG_DUTY",     "path": "Engine", "fmt": {"bix": 408, "len": 16, "max": 200,                  "mul": 200, "div": 65535,                                                     "unit": "percent" },            "name": "Waste gate duty"},
+    {"id": "SELTOS_WG_POSITION", "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99, "min": -200,  "mul": 400, "div": 65535,                      "sign": true, "nullmin": -200, "unit": "percent" },            "name": "Waste gate position"},
+    {"id": "SELTOS_WG_SETPOINT", "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 100,    "min": -200,  "mul": 400, "div": 65535,                      "sign": true, "nullmin": -200, "unit": "percent" },            "name": "Waste gate setpoint"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "E023"}, "freq": 1, "dbgfilter": { "to": 2019, "from": 2021 },
   "signals": [
